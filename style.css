@@ -10,7 +10,7 @@
   flex-direction: column;
   color: none;
 }
-div.container {
+div.sidebar {
   height: 100vh;
   width: 200px;
   background-color: #1f1f1f;
@@ -58,19 +58,35 @@ footer {
 .icons {
   margin-top: 20px;
 }
-form {
+.contact-page,
+#abhi {
   margin-left: 250px;
   display: flex;
   flex-direction: column;
   width: 50vw;
   padding: 50px;
   position: absolute;
+  font-weight: 700;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  padding: 50px;
+  position: absolute;
+}
+input,
+.mail,
+#abhi {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 input {
   padding: 15px;
   margin: 5px;
   font-size: 15px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
   border: none;
   font-weight: 500;
   border-radius: 10px;
@@ -86,7 +102,9 @@ a {
   color: white;
   text-decoration: none;
   font-weight: 700;
+  padding: 0px;
 }
+
 p.blog {
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -104,4 +122,36 @@ textarea {
   border: none;
   font-weight: 500;
   border-radius: 10px;
+}
+#body {
+  left: 50%;
+  position: relative;
+
+  align-items: center;
+
+  color: black;
+}
+
+label {
+  color: white;
+  font-weight: 700;
+}
+input,
+label,
+textarea {
+  margin-left: 0px;
+}
+.mail > p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+#abhi {
+  align-items: center;
+  align-content: center;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar {
+  }
 }

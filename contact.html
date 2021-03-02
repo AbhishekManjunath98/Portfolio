@@ -12,7 +12,8 @@
     <title>Document</title>
   </head>
   <body style="background-color: #03203c; height: 100vh">
-    <div class="container">
+    <!-- navbar start -->
+    <div class="sidebar">
       <div class="header">
         <img src="./images/avatar.jpg" alt="" id="avatar" />
         <h2>ABHISHEK M</h2>
@@ -36,36 +37,86 @@
         </nav>
       </div>
       <div class="icons">
-        <i class="fab fa-github" title="See my projects on GitHub"></i>
-        <i class="fab fa-facebook" title="facebook"></i>
-        <i class="fab fa-linkedin" title="LinkedIn"></i>
-        <i class="fab fa-instagram" title="instagram"></i>
-        <i class="fab fa-twitter" title="twitter"></i>
+        <a
+          href="https://github.com/AbhishekManjunath98"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="github"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/profile.php?id=100009369890565"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="facebook"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/abhishek-m-63a273194/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="linkedin"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/abhishek__mr/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="instagram"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://twitter.com/A_B_H_I_M"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="twitter"
+          ><i class="fab fa-twitter"></i
+        ></a>
       </div>
       <footer>
-        <p>Copyright &#169; 2021</p>
+        <p>copyright 2021</p>
       </footer>
     </div>
-    <form action="" method="post">
-      <input type="text" name="" placeholder="name" required />
-      <input type="text" name="" placeholder="email" required />
-      <input type="number" name="" placeholder="contact number" />
+    <!-- navbar ends -->
+    <div class="contact-page">
+      <form action="" method="post" netlify>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="name" required />
+        <label for="email">Email</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="email"
+          required
+        />
+        <label for="company-name">Company Name</label>
+        <input
+          type="number"
+          id="company-name"
+          name="companyName"
+          placeholder="contact number"
+        />
+        <label for="message"></label>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="6"
+          placeholder="write whats on your mind..."
+        ></textarea>
+        <input type="submit" value="submit" />
+      </form>
 
-      <textarea
-        name=""
-        id=""
-        cols="30"
-        rows="6"
-        placeholder="write whats on your mind..."
-      ></textarea>
-      <input type="submit" value="submit" />
-    </form>
-    <p>OR</p>
-    <p>
-      <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
-        SEND ME MAIL
-        </a
-      >
-    </p>
+      <!-- <p class="mail">
+        <p>OR</p>
+        <a
+          href="mailto:someone@example.com?Subject=Hello%20again"
+          target="_top"
+        >
+          SEND ME MAIL
+        </a>
+      </p> -->
+    </div>
   </body>
 </html>
