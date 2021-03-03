@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root {
   --textcolor: darkgrey;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #03203c;
+  height: 100vh;
 }
 * {
   margin: 0;
@@ -22,7 +28,9 @@ div.sidebar {
   padding: 40px 10px;
   text-align: center;
 }
-
+div.sidebar > a {
+  color: var(--textcolor);
+}
 div.header {
   display: flex;
   flex-direction: column;
@@ -30,7 +38,7 @@ div.header {
   color: white;
   /* margin-top: 20px; */
 }
-img {
+div.header > img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -40,7 +48,6 @@ img {
   padding: 10px;
 }
 a {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 10px;
 }
 
@@ -52,7 +59,7 @@ i {
 footer {
   color: var(--textcolor);
   margin-top: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
   font-weight: 500;
 }
 .icons {
@@ -64,7 +71,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 50vw;
-  padding: 50px;
+
   position: absolute;
   font-weight: 700;
 }
@@ -75,11 +82,6 @@ form {
   width: 50vw;
   padding: 50px;
   position: absolute;
-}
-input,
-.mail,
-#abhi {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 input {
@@ -107,7 +109,7 @@ a {
 
 p.blog {
   color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
   font-weight: 900;
   text-align: center;
   font-size: 50px;
@@ -117,8 +119,7 @@ p.blog {
 textarea {
   padding: 15px;
   margin: 5px;
-  font-size: 15px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
   border: none;
   font-weight: 500;
   border-radius: 10px;
@@ -140,18 +141,69 @@ input,
 label,
 textarea {
   margin-left: 0px;
+  font-family: 'Poppins', sans-serif;
 }
 .mail > p {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
 }
-#abhi {
+#description > div,
+#description > h1 {
+  display: flex;
+
+  flex-direction: column;
   align-items: center;
+  align-self: center;
   align-content: center;
   color: white;
 }
+#description > div > h1 {
+  padding: 20px;
+}
+#description > h1 {
+  margin-top: 50px;
+}
 
-@media screen and (max-width: 600px) {
-  .sidebar {
-  }
+div.projects {
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  color: whitesmoke;
+}
+div.projects > h1 {
+  margin-bottom: 20px;
+}
+div.project {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 300px;
+  width: 400px;
+  border: 3px solid whitesmoke;
+
+  overflow: hidden;
+  font-size: 10px;
+  text-align: center;
+}
+div.project > a > img {
+  width: 400px;
+  height: 250px;
+  object-fit: scale-down;
+}
+div.project > a > h1 {
+  color: var(--textcolor);
+}
+.project-footer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+
+  color: var(--textcolor);
+}
+.project-footer > h3 {
+  margin-top: 50px;
+}
+.project-footer > a > i > span {
+  padding: 10px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
 }
