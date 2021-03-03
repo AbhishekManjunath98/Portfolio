@@ -2,17 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
-    <script src="script.js"></script>
-    <title>portfolio</title>
-    <style></style>
+    <title>Document</title>
   </head>
-  <body>
+  <body style="background-color: #03203c; height: 100vh">
     <!-- navbar start -->
     <div class="sidebar">
       <div class="header">
@@ -82,22 +81,48 @@
       </footer>
     </div>
     <!-- navbar ends -->
-    <div id="description">
-      <div>
-        <h1>Hi there! 👋</h1>
-        <h1>I'm Abhishek M</h1>
-        <h3>A Web Developer</h3>
-        <h4>🏡 Bengaluru, India.</h4>
-      </div>
-      <div>
-        <h1>Tech Stack I know</h1>
-        <div class="tech-icons"></div>
-        <i style="color: #dd4b25" class="fab fa-html5"> HTML5</i>
-        <i style="color: #fd7e14" class="fab fa-css3"> CSS3</i>
-        <i style="color: #efd81d" class="fab fa-js"> JavaScript</i>
-        <i style="color: #15aabf" class="fab fa-react"> React</i>
-        <i style="color: #be4bdb" class="fab fa-bootstrap"> BootStrap</i>
-      </div>
+    <div class="contact-page">
+      <form action="" method="post" netlify>
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Type your name"
+          required
+        />
+        <label for="email">Email</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Type your email"
+          required
+        />
+        <label for="company-name">Company Name</label>
+        <input
+          type="text"
+          id="company-name"
+          name="companyName"
+          placeholder="Type your Company Name"
+        />
+        <label for="number">Contact Number</label>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          placeholder="Type your Contact Number"
+        />
+        <label for="message"></label>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="6"
+          placeholder="write whats on your mind..."
+        ></textarea>
+        <input type="submit" value="submit" />
+      </form>
     </div>
   </body>
 </html>
